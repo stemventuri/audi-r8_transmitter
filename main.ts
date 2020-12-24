@@ -10,7 +10,7 @@ Kitronik_Game_Controller.onButtonPress(Kitronik_Game_Controller.ControllerButton
     basic.showIcon(IconNames.Skull)
     boost_level += 1
     Kitronik_Game_Controller.runMotor(100)
-    if (boost_level >= 3) {
+    if (boost_level > 3) {
         boost_level = 1
     }
     radio.sendValue("boost", boost_level)
