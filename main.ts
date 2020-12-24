@@ -14,6 +14,7 @@ Kitronik_Game_Controller.onButtonPress(Kitronik_Game_Controller.ControllerButton
         boost_level = 1
     }
     radio.sendValue("boost", boost_level)
+    basic.showNumber(boost_level)
 })
 Kitronik_Game_Controller.onButtonPress(Kitronik_Game_Controller.ControllerButtonPins.Right, Kitronik_Game_Controller.ControllerButtonEvents.Up, function () {
     basic.clearScreen()
