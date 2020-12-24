@@ -10,6 +10,7 @@ Kitronik_Game_Controller.onButtonPress(Kitronik_Game_Controller.ControllerButton
 Kitronik_Game_Controller.onButtonPress(Kitronik_Game_Controller.ControllerButtonPins.Left, Kitronik_Game_Controller.ControllerButtonEvents.Down, function () {
     radio.sendNumber(3)
 })
+radio.setGroup(1)
 basic.showIcon(IconNames.Yes)
 basic.forever(function () {
 	
