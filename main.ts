@@ -7,8 +7,9 @@ Kitronik_Game_Controller.onButtonPress(Kitronik_Game_Controller.ControllerButton
     radio.sendValue("backward", 1)
 })
 Kitronik_Game_Controller.onButtonPress(Kitronik_Game_Controller.ControllerButtonPins.Up, Kitronik_Game_Controller.ControllerButtonEvents.Click, function () {
-    basic.showIcon(IconNames.SmallDiamond)
+    basic.showIcon(IconNames.Skull)
     boost_level += 1
+    Kitronik_Game_Controller.runMotor(100)
     if (boost_level >= 3) {
         boost_level = 1
     }
